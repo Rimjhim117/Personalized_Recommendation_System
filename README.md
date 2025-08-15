@@ -1,30 +1,30 @@
-# Personalized-Recommendation-System-
+Recipe Recommendation System
 
-This project is a web-based recipe recommendation system built with Python and the Flask framework. It uses a simple algorithm to suggest recipes based on user ratings, providing an intuitive way for users to discover new dishes.
+This project is a content-based recipe recommendation system built as an interactive web application using Streamlit. It intelligently suggests new recipes to users by analyzing the ingredients and instructions of existing recipes. The recommendation engine leverages machine learning techniques to provide personalized and relevant suggestions.
 
-📋 Features
+✨ Features
 
-    Recipe Discovery: Users can get a list of recommended recipes directly from the home page.
+    Content-Based Recommendation Engine: The application uses TF-IDF vectorization and cosine similarity to find recipes that are similar to each other based on their content, providing smart and relevant suggestions.
 
-    Top-Rated Recommendations: The system suggests the highest-rated recipes from a curated dataset.
+    Interactive User Interface: The app features a clean and user-friendly interface powered by Streamlit, allowing users to interact with the recommendation system easily.
 
-    User Feedback and Ratings: The application allows users to provide ratings and submit feedback for recipes, contributing to future improvements.
-
-    RESTful API Endpoints: A simple server provides endpoints for retrieving recommendations and submitting data.
-
-    Data-Driven: The system is powered by three CSV files that store recipe details, user ratings, and user feedback.
+    Data-Driven: The core of the system is built upon a dataset of recipes, ratings, and user feedback, allowing for further enhancements.
 
 💻 Technologies Used
 
-    Python: The primary programming language for the application logic.
+    Streamlit: The main framework used for building the interactive web application interface.
 
-    Flask: A lightweight web framework used to build the web server and API endpoints.
+    Python: The core programming language for all logic and data processing.
 
-    Pandas: A data manipulation library for reading and processing the recipe, ratings, and feedback data from CSV files.
+    Pandas: Used for efficient data manipulation and handling the recipe datasets.
+
+    Scikit-learn: The machine learning library that provides the TF-IDF vectorizer and cosine similarity functions for the recommendation algorithm.
+
+    NumPy: Used for numerical operations, likely for handling the similarity matrix.
 
 📂 Project Structure
 
-    app.py: The main Python script that runs the Flask server, defines the routes, and contains the recommendation logic.
+    app.py: The primary Streamlit script that runs the application and contains the recommendation logic.
 
     recipes.csv: Contains a database of recipes, including their names, ingredients, and instructions.
 
@@ -32,41 +32,39 @@ This project is a web-based recipe recommendation system built with Python and t
 
     feedback.csv: A log file that records user feedback on recipes.
 
-    README.md: The file you are currently reading.
-
 🚀 Getting Started
 
-Follow these instructions to set up and run the project locally.
+Follow these steps to set up and run the project on your local machine.
 
 Prerequisites
 
-You need to have Python and pip (Python package manager) installed.
+You need to have Python installed. You can install the required libraries using pip.
 
 Installation
 
-    Clone this repository to your local machine:
+    Clone this repository to your local machine.
     Bash
 
 git clone https://github.com/Rimjhim117/your-project-name.git
 
-Navigate to the project directory:
+Navigate to the project directory.
 Bash
 
 cd your-project-name
 
-Install the necessary Python packages using pip:
+Install the required Python packages:
 Bash
 
-    pip install Flask pandas
+    pip install streamlit pandas numpy scikit-learn
 
 Running the Application
 
-After installing the dependencies, you can start the server with a single command:
+To start the Streamlit application, run the following command in your terminal from the project directory:
 Bash
 
-python app.py
+streamlit run app.py
 
-The application will be running at http://127.0.0.1:5000 by default. You can access the API endpoints and view the recommendations from your web browser or an API client.
+This will open the application in your default web browser, and you can begin using the recipe recommendation system.
 
 📊 Data Files
 

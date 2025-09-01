@@ -106,4 +106,67 @@ This file is used to log user feedback.
 
     Feedback: The text content of the feedback.
 
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.7 or above
+- pip (Python package installer)
+
+### Installation and Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Rimjhim117/Personalized_Recommendation_System.git
+    cd Personalized_Recommendation_System
+    ```
+
+2. Install required Python packages:
+    ```bash
+    pip install streamlit pandas scikit-learn numpy
+    ```
+
+3. Run the application:
+    ```bash
+    streamlit run app.py
+    ```
+
+4. Open your browser and access:
+    ```
+    http://localhost:8501
+    ```
+
+---
+
+## 📖 Usage Guide
+
+1. Explore recipes listed in the app.  
+2. Select a recipe you like.  
+3. View recommended recipes based on similarity in ingredients and preparation.  
+4. Submit a rating or feedback to refine the model over time.  
+
+---
+
+## 🔮 Potential Enhancements
+
+- **Hybrid Recommendation System** → Combine content-based filtering with collaborative filtering.  
+- **Personal Profiles** → Save user preferences and history for better personalization.  
+- **Natural Language Search** → Query recipes like *“chicken curry with coconut milk.”*  
+- **Backend API Deployment** → Separate backend for scalability and integration.  
+- **Nutritional Info & Dietary Filters** → Support vegan, gluten-free, etc.  
+- **User Authentication** → Add login/signup for personalized recommendations.  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for new features, bug fixes, or improvements.
+---
+
+## 🙌 Acknowledgements
+
+- Thanks to the creators of **Streamlit**, **Scikit-Learn**, **Pandas**, and **NumPy**.  
+- Inspiration drawn from general recommendation system methodologies and the open-source community.
+
 
